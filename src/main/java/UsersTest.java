@@ -1,14 +1,16 @@
 import bookstore.entity.Users;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.Persistence;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
 
 public class UsersTest {
     public static void main(String[] args) {
         System.out.println("Test 1");
         Users user1 = new Users();
         user1.setEmail("Yurii@gmail.com");
-        user1.setFullName("Yurii Panasiuk");
+        user1.setFullName("javax vs jakarta");
         user1.setPassword("password");
 
         EntityManagerFactory entityManagerFactory =

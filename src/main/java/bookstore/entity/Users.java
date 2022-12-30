@@ -1,6 +1,7 @@
 package bookstore.entity;
 
-import jakarta.persistence.*;
+
+import javax.persistence.*;
 
 @Entity
 public class Users {
@@ -9,9 +10,9 @@ public class Users {
     private String fullName;
     private String password;
 
-    @Column (name = "user_id")
+    @Column(name = "user_id")
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer getUserId() {
         return userId;
     }

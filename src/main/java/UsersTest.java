@@ -10,7 +10,7 @@ public class UsersTest {
         System.out.println("Test 1");
         Users user1 = new Users();
         user1.setEmail("Yurii@gmail.com");
-        user1.setFullName("javax vs jakarta");
+        user1.setFullName("logging");
         user1.setPassword("password");
 
         EntityManagerFactory entityManagerFactory =
